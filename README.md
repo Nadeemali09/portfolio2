@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# portfolio2
+# portfolio
 I have developed my portfolio using react.js and taildwindcss
 =======
 # React + Vite
