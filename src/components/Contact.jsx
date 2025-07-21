@@ -23,7 +23,7 @@ const Contact = () => {
             <div className="flex items-center space-x-4">
               <FaLinkedin className="text-blue-400 text-xl" />
               <a
-                href="https://linkedin.com/in/Nadeem-ali-7765b431b"
+                href="https://linkedin.com/in/Nadeemali-coder"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-300 transition"
@@ -45,26 +45,31 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          < className="bg-gray-800 p-6 rounded-lg shadow-md space-y-4"
-            name="contact" // <--- IMPORTANT: Add a name attribute to the form
-            action="https://formspree.io/f/myzpkokd" 
-            method="POST" >
+          <form
+            className="bg-gray-800 p-6 rounded-lg shadow-md space-y-4"
+            name="contact"
+            action="https://formspree.io/f/myzpkokd"
+            method="POST"
+          >
             <h3 className="text-2xl font-semibold mb-2 text-indigo-300">Send a Message</h3>
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
               className="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               required
             />
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
               className="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               required
             />
             <textarea
-              placeholder="Your Message"
+              name="message"
               rows="4"
+              placeholder="Your Message"
               className="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               required
             ></textarea>
@@ -78,7 +83,6 @@ const Contact = () => {
         </div>
       </div>
     </section>
-     
   );
 };
 
