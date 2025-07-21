@@ -45,7 +45,10 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <form className="bg-gray-800 p-6 rounded-lg shadow-md space-y-4">
+          < className="bg-gray-800 p-6 rounded-lg shadow-md space-y-4"
+            name="contact" // <--- IMPORTANT: Add a name attribute to the form
+            action="https://formspree.io/f/myzpkokd" 
+            method="POST" >
             <h3 className="text-2xl font-semibold mb-2 text-indigo-300">Send a Message</h3>
             <input
               type="text"
